@@ -4,15 +4,20 @@
   var app = angular.module("compliments");
   app.controller("complimentsController", ComplimentsController);
 
-  function ComplimentsController(){
-    var self = this;
-    let rand = Math.floor(Math.random()/compliments.length);
-    self.compliments =
+  function complimentsController(){
+    var vm = this;
+    var randomIndex = Math.floor(Math.random() * data.length);
+    
+    
+    vm.compliments =
     [
       "Good effort!",
       "What a fine sweater!",
       "I appreciate all of your opinions.",
     ];
+    
+    vm.compliment = compliments[randomIndex];
+
 
   }
 
