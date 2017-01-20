@@ -5,7 +5,15 @@
   app.controller("complimentsController", ComplimentsController);
 
   function ComplimentsController(){
-    var vm = this;
+    var self = this;
+    let rand = Math.floor(Math.random()/compliments.length);
+    self.compliments =
+    [
+      "Good effort!",
+      "What a fine sweater!",
+      "I appreciate all of your opinions.",
+    ];
+
   }
 
 }());
