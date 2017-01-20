@@ -7,7 +7,18 @@
   function complimentsController(){
     var vm = this;
     var randomIndex = Math.floor(Math.random() * data.length);
-    vm.data = data[randomIndex];
+    
+    
+    vm.compliments =
+    [
+      "Good effort!",
+      "What a fine sweater!",
+      "I appreciate all of your opinions.",
+    ];
+    
+    vm.compliment = compliments[randomIndex];
+
+
   }
 
 }());
